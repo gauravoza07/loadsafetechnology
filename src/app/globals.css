@@ -22,5 +22,40 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', Arial, sans-serif;
+}
+
+/* Reusable button components */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-lg transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70;
+  }
+
+  .btn-md {
+    @apply px-5 py-2.5 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-8 py-3 text-base;
+  }
+
+  /* Primary CTA like the screenshot: light blue with blue text */
+  .btn-primary {
+    @apply bg-[#D9ECFF] text-[#1E5AA6] shadow-sm ring-1 ring-white/50 hover:bg-[#E7F3FF];
+  }
+
+  /* Glass variant for secondary actions */
+  .btn-glass {
+    @apply bg-white/10 text-white border border-white/20 backdrop-blur-md hover:bg-white/20 hover:border-white/30;
+  }
+
+  /* Right arrow helper inside buttons */
+  .btn-arrow {
+    @apply ml-2 -rotate-45 transition-transform duration-300;
+  }
+}
+
+/* Hover rotation for arrow when the button is hovered */
+.btn:hover .btn-arrow {
+  transform: rotate(45deg) ;
 }
