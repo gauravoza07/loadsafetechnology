@@ -5,6 +5,7 @@ import ServicesCard from "@/app/components/ServicesCard";
 import Industries from "@/app/components/Industries";
 import Reviews from "@/app/components/Reviews";
 import BottomCTA from "@/app/components/BottomCTA";
+import ContactForm from "@/app/components/ContactForm";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Industries />
       <Reviews />
       <BottomCTA />
+      <ContactForm />
     </>
   );
 }
