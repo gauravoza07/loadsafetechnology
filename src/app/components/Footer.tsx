@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { JSX } from "react";
 
 export default function Footer() {
   return (
