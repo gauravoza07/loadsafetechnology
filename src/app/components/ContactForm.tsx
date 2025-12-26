@@ -71,7 +71,7 @@ export default function ContactForm() {
                       name="fullName"
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-3 border rounded-lg"
+                      className="w-full px-4 py-3 border border-black rounded-lg"
                     />
                   </div>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
                       name="phoneNumber"
                       required
                       placeholder="Enter your phone number"
-                      className="w-full px-4 py-3 border rounded-lg"
+                      className="w-full px-4 py-3 border border-black rounded-lg"
                     />
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function ContactForm() {
                     rows={4}
                     required
                     placeholder="Write your message here..."
-                    className="w-full px-4 py-3 border rounded-lg resize-none"
+                    className="w-full px-4 py-3 border border-black rounded-lg resize-none"
                   />
                 </div>
 
