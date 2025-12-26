@@ -8,7 +8,7 @@ export default function AboutUsPage() {
     <main className="bg-white">
 
       {/* Breadcrumb */}
-      <div className="py-6 mt-20 lg:mt-30">
+      <div className="py-6 ">
         <div className="container mx-auto px-4 lg:px-8">
           <nav className="flex items-center space-x-2 text-base lg:text-lg">
             <Link
@@ -301,15 +301,15 @@ export default function AboutUsPage() {
               "Group 114.svg",
               "Group 116 (1).svg",
             ].map((logo, i) => (
-              <div className="col w-[45%] mx-auto">
-              <Image
-                key={i}
-                src={`https://ik.imagekit.io/1ffpgbxim/loadsafe/about us/${logo}`}
-                alt="Client Logo"
-                width={160}
-                height={80}
-                className="w-full h-full object-cover"
-              />
+              <div className="col w-full md:w-1/4 mx-auto">
+                <Image
+                  key={i}
+                  src={`https://ik.imagekit.io/1ffpgbxim/loadsafe/about us/${logo}`}
+                  alt="Client Logo"
+                  width={160}
+                  height={80}
+                  className="mx-auto block w-full h-full object-contain"
+                />
               </div>
             ))}
           </div>
