@@ -10,6 +10,14 @@ const manrope = Manrope({
   display: 'swap',  // Prevents layout shift
 });
 
+export const metadata = {
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
