@@ -12,8 +12,8 @@ const manrope = Manrope({
 
 export const metadata = {
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
+    icon: '/faviconNew.ico',
+    shortcut: '/faviconNew.ico',
     apple: '/apple-touch-icon.png',
   },
 }
