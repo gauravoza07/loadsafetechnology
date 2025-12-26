@@ -226,7 +226,7 @@ function SocialIcon({
   href: string;
   icon: "instagram" | "whatsapp" | "mail" | "phone";
 }) {
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactNode> = {
     instagram: (
       <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor">
         <rect x="4" y="4" width="16" height="16" rx="4" />
@@ -259,3 +259,4 @@ function SocialIcon({
     </Link>
   );
 }
+
